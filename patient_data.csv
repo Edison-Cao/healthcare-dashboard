@@ -1,0 +1,11 @@
+Patient_ID,Age,Gender,Department,Diagnosis,Length_of_Stay,Cost
+P001,45,Male,Cardiology,Hypertension,5,3200
+P002,60,Female,Neurology,Stroke,10,7800
+P003,32,Male,Orthopedics,Fracture,3,2100
+P004,70,Female,Cardiology,Heart Disease,8,6500
+P005,25,Female,Pediatrics,Flu,2,500
+P006,55,Male,Neurology,Migraine,4,1800
+P007,40,Female,Orthopedics,Arthritis,6,3000
+P008,68,Male,Cardiology,Heart Failure,9,8200
+P009,30,Male,Pediatrics,Infection,3,900
+P010,52,Female,Neurology,Epilepsy,5,2600
