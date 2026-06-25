@@ -1,11 +1,1001 @@
 Patient_ID,Age,Gender,Department,Diagnosis,Length_of_Stay,Cost
-P001,45,Male,Cardiology,Hypertension,5,3200
-P002,60,Female,Neurology,Stroke,10,7800
-P003,32,Male,Orthopedics,Fracture,3,2100
-P004,70,Female,Cardiology,Heart Disease,8,6500
-P005,25,Female,Pediatrics,Flu,2,500
-P006,55,Male,Neurology,Migraine,4,1800
-P007,40,Female,Orthopedics,Arthritis,6,3000
-P008,68,Male,Cardiology,Heart Failure,9,8200
-P009,30,Male,Pediatrics,Infection,3,900
-P010,52,Female,Neurology,Epilepsy,5,2600
+P0001,42,Male,Orthopedics,Fracture,12,6927
+P0002,37,Male,Oncology,Lung Cancer,14,11356
+P0003,38,Female,Cardiology,Hypertension,12,7045
+P0004,55,Female,Orthopedics,Fracture,3,13175
+P0005,73,Female,Cardiology,Heart Failure,9,11820
+P0006,20,Male,Neurology,Migraine,1,13594
+P0007,68,Male,Orthopedics,Arthritis,13,1416
+P0008,78,Male,Neurology,Epilepsy,12,6453
+P0009,81,Female,Oncology,Lung Cancer,10,12674
+P0010,21,Male,Pediatrics,Infection,1,1238
+P0011,33,Female,Cardiology,Heart Failure,8,8212
+P0012,18,Female,Oncology,Breast Cancer,2,2155
+P0013,58,Female,Neurology,Stroke,15,1175
+P0014,84,Male,Orthopedics,Back Pain,1,3183
+P0015,71,Female,Oncology,Breast Cancer,13,4755
+P0016,67,Female,Cardiology,Heart Disease,5,11947
+P0017,56,Male,Neurology,Epilepsy,1,5859
+P0018,43,Male,Cardiology,Heart Failure,6,1642
+P0019,41,Female,Oncology,Breast Cancer,2,8003
+P0020,32,Female,Pediatrics,Infection,9,2414
+P0021,51,Male,Pediatrics,Flu,1,7846
+P0022,29,Male,Neurology,Epilepsy,8,9655
+P0023,46,Male,Oncology,Breast Cancer,15,2983
+P0024,46,Female,Neurology,Stroke,2,4976
+P0025,39,Female,Pediatrics,Infection,4,910
+P0026,25,Male,Pediatrics,Flu,8,10360
+P0027,20,Female,Cardiology,Hypertension,7,1300
+P0028,62,Female,Oncology,Lung Cancer,6,10209
+P0029,35,Female,Cardiology,Heart Disease,11,1212
+P0030,68,Female,Neurology,Epilepsy,3,12565
+P0031,24,Male,Cardiology,Heart Disease,10,2592
+P0032,55,Male,Pediatrics,Fever,12,6342
+P0033,61,Female,Cardiology,Heart Disease,15,2647
+P0034,85,Male,Neurology,Stroke,2,6900
+P0035,78,Female,Pediatrics,Flu,8,1590
+P0036,21,Male,Oncology,Lung Cancer,12,9403
+P0037,72,Female,Pediatrics,Flu,3,14147
+P0038,44,Female,Neurology,Epilepsy,1,9726
+P0039,55,Female,Cardiology,Hypertension,7,8011
+P0040,73,Female,Pediatrics,Infection,11,14123
+P0041,55,Male,Oncology,Lung Cancer,4,5422
+P0042,25,Male,Oncology,Lung Cancer,15,11984
+P0043,49,Male,Pediatrics,Flu,4,13917
+P0044,79,Female,Oncology,Leukemia,8,12297
+P0045,21,Female,Oncology,Breast Cancer,15,2717
+P0046,78,Female,Oncology,Breast Cancer,1,6842
+P0047,32,Male,Orthopedics,Arthritis,2,7972
+P0048,22,Male,Orthopedics,Arthritis,9,3912
+P0049,73,Female,Orthopedics,Arthritis,9,8402
+P0050,82,Female,Orthopedics,Back Pain,7,6155
+P0051,55,Female,Pediatrics,Flu,7,8090
+P0052,36,Female,Neurology,Epilepsy,15,9372
+P0053,41,Female,Oncology,Leukemia,7,10840
+P0054,78,Male,Neurology,Stroke,6,12777
+P0055,27,Female,Oncology,Leukemia,2,7651
+P0056,76,Female,Oncology,Leukemia,12,14683
+P0057,29,Male,Oncology,Leukemia,14,7867
+P0058,71,Male,Orthopedics,Back Pain,15,10544
+P0059,35,Female,Pediatrics,Infection,9,7286
+P0060,76,Male,Neurology,Stroke,10,4039
+P0061,56,Female,Oncology,Lung Cancer,4,9548
+P0062,59,Male,Cardiology,Heart Disease,4,4459
+P0063,84,Male,Orthopedics,Fracture,1,2246
+P0064,35,Male,Cardiology,Heart Disease,9,4311
+P0065,41,Female,Oncology,Breast Cancer,6,6033
+P0066,36,Female,Orthopedics,Fracture,12,10634
+P0067,23,Male,Neurology,Epilepsy,2,12081
+P0068,79,Female,Orthopedics,Fracture,9,12932
+P0069,72,Male,Neurology,Stroke,2,12609
+P0070,75,Male,Orthopedics,Back Pain,14,13722
+P0071,71,Female,Neurology,Epilepsy,4,11127
+P0072,34,Male,Neurology,Stroke,12,14460
+P0073,82,Female,Orthopedics,Fracture,1,12163
+P0074,43,Male,Oncology,Breast Cancer,4,5307
+P0075,48,Female,Pediatrics,Flu,2,3695
+P0076,56,Female,Orthopedics,Fracture,9,6033
+P0077,34,Female,Neurology,Epilepsy,4,1856
+P0078,26,Female,Pediatrics,Flu,11,13032
+P0079,48,Male,Cardiology,Heart Failure,9,9313
+P0080,31,Female,Neurology,Epilepsy,1,11561
+P0081,51,Female,Orthopedics,Back Pain,10,3857
+P0082,52,Male,Cardiology,Hypertension,14,1558
+P0083,79,Female,Neurology,Stroke,13,11685
+P0084,62,Male,Neurology,Epilepsy,15,6229
+P0085,46,Male,Oncology,Breast Cancer,12,3586
+P0086,35,Female,Pediatrics,Flu,3,3186
+P0087,70,Male,Pediatrics,Fever,10,1476
+P0088,56,Male,Cardiology,Hypertension,3,2092
+P0089,72,Female,Orthopedics,Arthritis,13,10794
+P0090,36,Male,Pediatrics,Flu,2,6848
+P0091,72,Female,Oncology,Leukemia,13,10650
+P0092,59,Female,Oncology,Breast Cancer,5,12862
+P0093,61,Female,Neurology,Stroke,15,6845
+P0094,60,Female,Orthopedics,Fracture,13,9965
+P0095,22,Female,Pediatrics,Infection,6,7501
+P0096,45,Female,Cardiology,Hypertension,13,3154
+P0097,48,Male,Orthopedics,Arthritis,7,5654
+P0098,63,Male,Pediatrics,Infection,12,12259
+P0099,82,Male,Cardiology,Heart Failure,4,5119
+P0100,18,Male,Orthopedics,Fracture,11,5216
+P0101,67,Female,Orthopedics,Back Pain,7,5316
+P0102,73,Male,Neurology,Stroke,8,9464
+P0103,76,Male,Orthopedics,Back Pain,11,14280
+P0104,40,Male,Orthopedics,Fracture,8,10990
+P0105,75,Female,Orthopedics,Fracture,10,5692
+P0106,58,Male,Neurology,Epilepsy,7,12313
+P0107,65,Female,Cardiology,Heart Disease,1,10642
+P0108,21,Male,Oncology,Leukemia,9,5728
+P0109,62,Male,Cardiology,Heart Disease,7,5402
+P0110,36,Female,Neurology,Stroke,2,5390
+P0111,77,Male,Pediatrics,Infection,14,12240
+P0112,35,Female,Pediatrics,Flu,1,13332
+P0113,82,Female,Orthopedics,Fracture,8,14659
+P0114,65,Female,Pediatrics,Flu,9,3642
+P0115,58,Female,Cardiology,Hypertension,2,3874
+P0116,30,Male,Cardiology,Heart Disease,4,13058
+P0117,40,Male,Neurology,Stroke,4,14386
+P0118,26,Male,Oncology,Leukemia,9,14943
+P0119,27,Male,Cardiology,Hypertension,4,7815
+P0120,23,Male,Oncology,Leukemia,9,8550
+P0121,52,Female,Orthopedics,Arthritis,8,4042
+P0122,72,Female,Neurology,Epilepsy,6,663
+P0123,22,Female,Cardiology,Hypertension,13,4377
+P0124,43,Female,Cardiology,Heart Disease,15,2829
+P0125,44,Male,Cardiology,Heart Disease,13,7409
+P0126,20,Male,Pediatrics,Infection,12,11250
+P0127,43,Female,Pediatrics,Flu,2,14101
+P0128,83,Male,Oncology,Leukemia,11,5989
+P0129,28,Female,Oncology,Breast Cancer,3,5671
+P0130,38,Female,Pediatrics,Fever,13,9199
+P0131,68,Male,Neurology,Stroke,7,11600
+P0132,81,Female,Orthopedics,Fracture,4,8624
+P0133,59,Male,Orthopedics,Back Pain,9,1202
+P0134,29,Male,Neurology,Epilepsy,6,9269
+P0135,61,Male,Orthopedics,Arthritis,8,8501
+P0136,69,Female,Oncology,Leukemia,4,3092
+P0137,73,Female,Pediatrics,Flu,9,9757
+P0138,83,Female,Oncology,Breast Cancer,14,4135
+P0139,85,Female,Neurology,Stroke,10,6297
+P0140,58,Male,Orthopedics,Back Pain,4,3457
+P0141,66,Female,Orthopedics,Arthritis,1,6263
+P0142,32,Female,Orthopedics,Fracture,9,10757
+P0143,66,Male,Neurology,Epilepsy,15,6678
+P0144,41,Male,Orthopedics,Fracture,11,8059
+P0145,80,Male,Orthopedics,Fracture,11,12193
+P0146,67,Male,Oncology,Lung Cancer,5,1349
+P0147,20,Female,Cardiology,Heart Disease,8,4318
+P0148,28,Male,Orthopedics,Back Pain,4,9737
+P0149,73,Female,Neurology,Migraine,2,7417
+P0150,25,Male,Pediatrics,Flu,2,9237
+P0151,74,Female,Neurology,Epilepsy,13,6403
+P0152,45,Female,Oncology,Lung Cancer,2,8616
+P0153,74,Female,Neurology,Epilepsy,1,12665
+P0154,27,Male,Oncology,Lung Cancer,14,12658
+P0155,32,Male,Cardiology,Heart Disease,7,14728
+P0156,62,Female,Orthopedics,Arthritis,1,6320
+P0157,23,Male,Oncology,Lung Cancer,4,5238
+P0158,55,Female,Oncology,Leukemia,1,8958
+P0159,81,Female,Cardiology,Hypertension,7,7714
+P0160,26,Male,Oncology,Leukemia,12,12639
+P0161,70,Male,Neurology,Epilepsy,13,9833
+P0162,75,Male,Orthopedics,Arthritis,3,9631
+P0163,65,Female,Oncology,Lung Cancer,12,9787
+P0164,78,Female,Neurology,Migraine,7,2886
+P0165,72,Male,Orthopedics,Back Pain,1,8285
+P0166,41,Male,Cardiology,Hypertension,13,13633
+P0167,48,Female,Orthopedics,Fracture,7,5396
+P0168,35,Male,Oncology,Breast Cancer,15,14997
+P0169,37,Male,Pediatrics,Infection,3,12201
+P0170,83,Female,Neurology,Migraine,12,7452
+P0171,82,Male,Oncology,Leukemia,4,9181
+P0172,29,Male,Neurology,Epilepsy,6,2374
+P0173,78,Male,Pediatrics,Flu,14,12883
+P0174,27,Male,Pediatrics,Fever,9,13963
+P0175,45,Male,Cardiology,Heart Failure,6,6813
+P0176,18,Male,Pediatrics,Fever,3,11258
+P0177,18,Female,Oncology,Breast Cancer,9,4466
+P0178,28,Male,Neurology,Stroke,13,3079
+P0179,29,Male,Pediatrics,Infection,10,9290
+P0180,67,Male,Neurology,Stroke,15,8429
+P0181,40,Female,Pediatrics,Infection,2,10301
+P0182,68,Male,Cardiology,Heart Disease,2,6007
+P0183,63,Female,Oncology,Breast Cancer,5,5655
+P0184,55,Female,Oncology,Breast Cancer,8,628
+P0185,19,Male,Neurology,Stroke,8,1509
+P0186,67,Female,Cardiology,Heart Failure,1,5172
+P0187,55,Male,Neurology,Epilepsy,11,2803
+P0188,27,Female,Pediatrics,Flu,13,2977
+P0189,27,Male,Oncology,Breast Cancer,2,14187
+P0190,36,Female,Pediatrics,Fever,4,11174
+P0191,78,Female,Orthopedics,Back Pain,12,12692
+P0192,53,Male,Cardiology,Hypertension,1,7158
+P0193,73,Female,Neurology,Epilepsy,15,9341
+P0194,34,Female,Pediatrics,Fever,10,7439
+P0195,82,Female,Orthopedics,Fracture,14,7493
+P0196,56,Female,Pediatrics,Flu,9,2741
+P0197,60,Female,Cardiology,Heart Disease,14,4574
+P0198,84,Female,Neurology,Stroke,1,6160
+P0199,27,Female,Oncology,Breast Cancer,13,5679
+P0200,51,Female,Orthopedics,Back Pain,3,8753
+P0201,53,Female,Cardiology,Heart Failure,2,1102
+P0202,82,Female,Cardiology,Hypertension,5,7294
+P0203,75,Female,Pediatrics,Infection,5,6707
+P0204,60,Male,Neurology,Stroke,7,10209
+P0205,41,Male,Oncology,Leukemia,1,6166
+P0206,28,Male,Pediatrics,Fever,12,2299
+P0207,30,Male,Oncology,Lung Cancer,6,9136
+P0208,34,Male,Cardiology,Heart Failure,15,14206
+P0209,41,Female,Oncology,Leukemia,10,11055
+P0210,61,Female,Neurology,Migraine,10,12005
+P0211,25,Male,Neurology,Migraine,13,11219
+P0212,68,Male,Oncology,Lung Cancer,14,6831
+P0213,83,Male,Orthopedics,Fracture,5,1795
+P0214,29,Male,Oncology,Lung Cancer,15,1909
+P0215,60,Female,Orthopedics,Back Pain,7,1913
+P0216,62,Male,Cardiology,Hypertension,7,1453
+P0217,85,Female,Orthopedics,Fracture,9,3802
+P0218,58,Male,Oncology,Lung Cancer,2,14902
+P0219,29,Female,Oncology,Breast Cancer,13,7248
+P0220,64,Male,Cardiology,Heart Disease,13,14634
+P0221,83,Female,Pediatrics,Flu,6,2881
+P0222,37,Male,Orthopedics,Back Pain,10,9802
+P0223,73,Male,Neurology,Epilepsy,3,14521
+P0224,69,Female,Oncology,Leukemia,4,14506
+P0225,60,Female,Pediatrics,Fever,11,2149
+P0226,57,Male,Orthopedics,Back Pain,14,10659
+P0227,33,Male,Oncology,Breast Cancer,5,11628
+P0228,80,Female,Oncology,Breast Cancer,5,848
+P0229,59,Male,Orthopedics,Arthritis,7,12740
+P0230,81,Female,Pediatrics,Flu,14,11446
+P0231,40,Female,Pediatrics,Flu,11,938
+P0232,62,Male,Neurology,Stroke,5,1069
+P0233,44,Male,Pediatrics,Infection,14,13025
+P0234,50,Female,Oncology,Breast Cancer,4,10209
+P0235,64,Male,Oncology,Breast Cancer,2,3267
+P0236,38,Male,Neurology,Epilepsy,3,11755
+P0237,43,Female,Pediatrics,Fever,7,9657
+P0238,81,Female,Pediatrics,Infection,8,2922
+P0239,82,Female,Neurology,Epilepsy,4,3558
+P0240,62,Female,Oncology,Lung Cancer,11,1118
+P0241,66,Female,Orthopedics,Back Pain,13,14767
+P0242,23,Female,Cardiology,Hypertension,5,9035
+P0243,69,Male,Cardiology,Hypertension,10,2737
+P0244,39,Male,Neurology,Migraine,9,9574
+P0245,40,Male,Pediatrics,Flu,5,2521
+P0246,38,Male,Orthopedics,Arthritis,12,13057
+P0247,61,Female,Orthopedics,Arthritis,14,5035
+P0248,35,Female,Orthopedics,Fracture,4,9274
+P0249,50,Female,Neurology,Migraine,5,3393
+P0250,64,Male,Cardiology,Hypertension,6,1471
+P0251,48,Male,Cardiology,Heart Disease,11,7240
+P0252,31,Female,Neurology,Migraine,11,3927
+P0253,19,Female,Pediatrics,Fever,5,11487
+P0254,36,Female,Oncology,Lung Cancer,11,5612
+P0255,40,Male,Neurology,Epilepsy,12,3886
+P0256,55,Female,Neurology,Stroke,8,5534
+P0257,27,Female,Cardiology,Heart Disease,7,3988
+P0258,36,Male,Neurology,Migraine,3,3913
+P0259,63,Female,Cardiology,Hypertension,2,7960
+P0260,79,Female,Oncology,Lung Cancer,10,1189
+P0261,50,Female,Orthopedics,Back Pain,8,9561
+P0262,73,Male,Neurology,Epilepsy,1,6727
+P0263,31,Male,Orthopedics,Back Pain,2,5217
+P0264,80,Female,Oncology,Lung Cancer,3,13430
+P0265,29,Female,Neurology,Epilepsy,1,12051
+P0266,33,Female,Pediatrics,Infection,3,12792
+P0267,23,Female,Orthopedics,Arthritis,3,13936
+P0268,45,Male,Neurology,Migraine,8,11836
+P0269,78,Male,Cardiology,Hypertension,8,7290
+P0270,25,Male,Cardiology,Heart Disease,13,13358
+P0271,76,Female,Cardiology,Hypertension,7,14957
+P0272,38,Male,Oncology,Lung Cancer,1,14390
+P0273,25,Female,Neurology,Epilepsy,7,14992
+P0274,20,Male,Cardiology,Hypertension,8,2371
+P0275,56,Male,Oncology,Leukemia,5,6731
+P0276,24,Female,Neurology,Migraine,15,8726
+P0277,50,Female,Orthopedics,Arthritis,10,1263
+P0278,45,Female,Orthopedics,Back Pain,1,3210
+P0279,27,Female,Oncology,Lung Cancer,4,11550
+P0280,50,Male,Neurology,Migraine,9,10495
+P0281,34,Female,Cardiology,Hypertension,5,7813
+P0282,64,Female,Orthopedics,Back Pain,5,11636
+P0283,36,Female,Pediatrics,Fever,10,623
+P0284,33,Male,Cardiology,Hypertension,15,7417
+P0285,76,Female,Pediatrics,Fever,4,9419
+P0286,63,Female,Orthopedics,Arthritis,11,5513
+P0287,24,Female,Oncology,Lung Cancer,15,3127
+P0288,65,Female,Pediatrics,Infection,12,7413
+P0289,46,Female,Pediatrics,Fever,11,3242
+P0290,47,Female,Pediatrics,Flu,7,13179
+P0291,63,Female,Cardiology,Hypertension,1,4675
+P0292,40,Female,Orthopedics,Arthritis,10,4716
+P0293,50,Female,Oncology,Breast Cancer,3,11196
+P0294,36,Female,Cardiology,Heart Disease,15,911
+P0295,83,Male,Orthopedics,Arthritis,5,5539
+P0296,56,Male,Neurology,Epilepsy,15,1907
+P0297,21,Male,Cardiology,Heart Disease,8,13367
+P0298,31,Male,Orthopedics,Back Pain,12,6107
+P0299,77,Male,Orthopedics,Fracture,4,9876
+P0300,75,Male,Oncology,Leukemia,7,5349
+P0301,53,Female,Orthopedics,Back Pain,4,4985
+P0302,39,Male,Neurology,Epilepsy,6,6949
+P0303,71,Female,Neurology,Migraine,3,7219
+P0304,39,Male,Cardiology,Hypertension,8,7449
+P0305,43,Female,Orthopedics,Back Pain,12,3559
+P0306,36,Male,Orthopedics,Back Pain,6,2785
+P0307,75,Female,Neurology,Epilepsy,1,8864
+P0308,47,Male,Cardiology,Hypertension,1,4217
+P0309,73,Female,Neurology,Epilepsy,6,1776
+P0310,61,Female,Orthopedics,Back Pain,13,3182
+P0311,37,Female,Orthopedics,Arthritis,12,13601
+P0312,69,Male,Cardiology,Heart Disease,9,1247
+P0313,62,Female,Oncology,Breast Cancer,12,5656
+P0314,54,Male,Neurology,Migraine,9,14515
+P0315,79,Male,Cardiology,Hypertension,15,14709
+P0316,51,Male,Orthopedics,Back Pain,2,1282
+P0317,39,Female,Orthopedics,Fracture,6,5588
+P0318,49,Female,Cardiology,Heart Failure,2,1470
+P0319,85,Female,Neurology,Stroke,5,586
+P0320,26,Male,Neurology,Migraine,2,3965
+P0321,80,Female,Pediatrics,Fever,15,10060
+P0322,67,Male,Oncology,Lung Cancer,9,9501
+P0323,82,Male,Pediatrics,Flu,10,7700
+P0324,46,Male,Neurology,Stroke,5,12929
+P0325,62,Male,Oncology,Leukemia,1,4605
+P0326,50,Female,Orthopedics,Fracture,6,2859
+P0327,30,Male,Pediatrics,Fever,6,9052
+P0328,37,Male,Pediatrics,Flu,12,7407
+P0329,37,Male,Pediatrics,Infection,1,4529
+P0330,38,Male,Neurology,Migraine,7,9052
+P0331,59,Male,Cardiology,Heart Failure,12,13934
+P0332,23,Male,Cardiology,Heart Disease,8,818
+P0333,21,Female,Pediatrics,Flu,12,5010
+P0334,56,Male,Cardiology,Heart Failure,15,5934
+P0335,23,Female,Cardiology,Hypertension,7,1442
+P0336,71,Female,Pediatrics,Fever,8,11006
+P0337,64,Female,Orthopedics,Fracture,13,10480
+P0338,62,Female,Cardiology,Heart Disease,11,1649
+P0339,77,Female,Cardiology,Heart Failure,11,5552
+P0340,43,Female,Orthopedics,Fracture,1,6755
+P0341,32,Female,Orthopedics,Back Pain,15,11341
+P0342,39,Male,Pediatrics,Infection,5,4264
+P0343,62,Male,Neurology,Epilepsy,14,5240
+P0344,57,Male,Oncology,Leukemia,5,6374
+P0345,58,Male,Orthopedics,Fracture,13,984
+P0346,68,Female,Orthopedics,Back Pain,7,8886
+P0347,54,Female,Oncology,Breast Cancer,8,10993
+P0348,49,Male,Neurology,Migraine,7,4795
+P0349,39,Female,Pediatrics,Flu,8,5798
+P0350,47,Male,Pediatrics,Infection,9,12811
+P0351,18,Male,Oncology,Breast Cancer,7,8551
+P0352,80,Male,Neurology,Stroke,5,13030
+P0353,76,Female,Neurology,Epilepsy,9,12203
+P0354,57,Male,Cardiology,Heart Failure,11,14323
+P0355,56,Male,Neurology,Epilepsy,2,10343
+P0356,51,Female,Orthopedics,Fracture,2,9664
+P0357,51,Male,Neurology,Migraine,2,8068
+P0358,85,Female,Neurology,Stroke,10,1804
+P0359,41,Male,Orthopedics,Arthritis,12,3904
+P0360,40,Female,Oncology,Breast Cancer,8,1316
+P0361,57,Male,Cardiology,Heart Disease,4,10081
+P0362,68,Male,Pediatrics,Infection,4,7882
+P0363,56,Female,Oncology,Breast Cancer,10,3907
+P0364,79,Female,Neurology,Migraine,1,3967
+P0365,28,Female,Neurology,Epilepsy,15,12104
+P0366,30,Female,Cardiology,Hypertension,12,10799
+P0367,29,Female,Cardiology,Heart Failure,1,13452
+P0368,76,Female,Orthopedics,Back Pain,13,4937
+P0369,48,Female,Orthopedics,Fracture,1,5933
+P0370,23,Female,Orthopedics,Arthritis,1,3070
+P0371,81,Male,Neurology,Stroke,5,3422
+P0372,64,Female,Cardiology,Hypertension,11,5497
+P0373,64,Male,Pediatrics,Flu,12,11903
+P0374,74,Male,Orthopedics,Back Pain,4,7456
+P0375,84,Female,Cardiology,Hypertension,14,5087
+P0376,85,Male,Orthopedics,Fracture,7,11649
+P0377,61,Female,Pediatrics,Infection,10,10156
+P0378,70,Female,Neurology,Epilepsy,5,11179
+P0379,44,Female,Oncology,Breast Cancer,1,8862
+P0380,78,Female,Orthopedics,Back Pain,7,765
+P0381,28,Male,Neurology,Migraine,13,11944
+P0382,63,Male,Oncology,Leukemia,13,9524
+P0383,41,Male,Oncology,Leukemia,11,8682
+P0384,79,Male,Pediatrics,Flu,2,6355
+P0385,59,Female,Neurology,Stroke,12,13263
+P0386,47,Male,Pediatrics,Infection,2,8740
+P0387,38,Female,Pediatrics,Fever,9,9152
+P0388,84,Male,Cardiology,Hypertension,5,1395
+P0389,46,Male,Orthopedics,Fracture,11,3515
+P0390,27,Female,Neurology,Epilepsy,6,5037
+P0391,47,Male,Pediatrics,Fever,10,10811
+P0392,61,Male,Orthopedics,Back Pain,12,13268
+P0393,60,Female,Cardiology,Heart Disease,5,830
+P0394,48,Male,Pediatrics,Flu,5,10339
+P0395,71,Female,Neurology,Migraine,7,2404
+P0396,21,Female,Pediatrics,Flu,7,4348
+P0397,72,Female,Orthopedics,Arthritis,8,5324
+P0398,35,Male,Neurology,Epilepsy,7,11788
+P0399,31,Female,Neurology,Stroke,1,8346
+P0400,59,Male,Cardiology,Heart Disease,5,5603
+P0401,19,Female,Neurology,Stroke,9,5638
+P0402,82,Female,Orthopedics,Fracture,1,7836
+P0403,42,Female,Oncology,Lung Cancer,10,8548
+P0404,68,Male,Pediatrics,Infection,1,6023
+P0405,65,Male,Cardiology,Heart Failure,6,4926
+P0406,57,Male,Neurology,Stroke,6,13354
+P0407,44,Male,Orthopedics,Back Pain,4,3303
+P0408,66,Male,Neurology,Epilepsy,3,8442
+P0409,73,Male,Cardiology,Hypertension,14,2719
+P0410,46,Male,Pediatrics,Fever,4,6576
+P0411,32,Male,Orthopedics,Back Pain,2,1594
+P0412,38,Female,Orthopedics,Fracture,8,5242
+P0413,55,Male,Cardiology,Heart Disease,15,7630
+P0414,49,Female,Orthopedics,Back Pain,1,3000
+P0415,35,Female,Neurology,Epilepsy,6,4529
+P0416,22,Male,Pediatrics,Fever,1,4572
+P0417,31,Male,Oncology,Lung Cancer,5,9940
+P0418,46,Female,Pediatrics,Flu,9,6783
+P0419,51,Male,Pediatrics,Fever,7,2947
+P0420,27,Male,Orthopedics,Arthritis,1,1723
+P0421,28,Male,Neurology,Stroke,10,14022
+P0422,69,Female,Oncology,Breast Cancer,3,9814
+P0423,79,Female,Oncology,Breast Cancer,1,5213
+P0424,62,Female,Neurology,Epilepsy,10,9649
+P0425,61,Female,Orthopedics,Arthritis,3,14005
+P0426,57,Male,Neurology,Stroke,2,12350
+P0427,24,Male,Pediatrics,Infection,1,11565
+P0428,32,Female,Neurology,Migraine,8,4606
+P0429,26,Female,Oncology,Leukemia,7,7212
+P0430,77,Female,Orthopedics,Arthritis,14,13616
+P0431,72,Male,Orthopedics,Fracture,15,7881
+P0432,64,Female,Orthopedics,Arthritis,7,4117
+P0433,77,Male,Oncology,Leukemia,13,3443
+P0434,19,Female,Neurology,Stroke,2,9346
+P0435,19,Female,Neurology,Stroke,7,2415
+P0436,34,Female,Neurology,Epilepsy,3,13181
+P0437,31,Female,Orthopedics,Arthritis,13,10218
+P0438,57,Male,Oncology,Lung Cancer,9,12046
+P0439,60,Male,Cardiology,Heart Failure,11,5966
+P0440,53,Male,Pediatrics,Fever,6,7939
+P0441,64,Female,Orthopedics,Back Pain,5,2368
+P0442,37,Male,Cardiology,Hypertension,14,6504
+P0443,25,Female,Orthopedics,Fracture,9,2071
+P0444,54,Male,Oncology,Lung Cancer,15,12228
+P0445,41,Male,Pediatrics,Infection,9,3206
+P0446,59,Male,Cardiology,Heart Failure,4,1614
+P0447,64,Male,Oncology,Breast Cancer,5,6618
+P0448,19,Female,Pediatrics,Flu,10,10847
+P0449,75,Male,Orthopedics,Arthritis,9,5430
+P0450,66,Male,Oncology,Breast Cancer,1,3040
+P0451,37,Male,Cardiology,Heart Disease,10,7205
+P0452,85,Female,Orthopedics,Arthritis,2,6188
+P0453,71,Female,Neurology,Migraine,14,14980
+P0454,52,Male,Oncology,Lung Cancer,14,4711
+P0455,27,Female,Neurology,Migraine,7,6659
+P0456,47,Female,Oncology,Lung Cancer,3,13273
+P0457,52,Male,Orthopedics,Back Pain,9,6410
+P0458,80,Female,Orthopedics,Arthritis,14,9993
+P0459,66,Male,Pediatrics,Infection,6,10935
+P0460,29,Female,Neurology,Epilepsy,15,14869
+P0461,36,Male,Orthopedics,Fracture,6,10010
+P0462,48,Male,Cardiology,Heart Failure,6,10992
+P0463,81,Male,Cardiology,Heart Failure,4,9767
+P0464,43,Female,Cardiology,Heart Failure,10,11573
+P0465,38,Male,Oncology,Breast Cancer,3,10756
+P0466,80,Male,Orthopedics,Fracture,8,14130
+P0467,83,Female,Pediatrics,Flu,7,14821
+P0468,68,Male,Orthopedics,Fracture,3,9443
+P0469,22,Male,Cardiology,Heart Failure,11,8023
+P0470,31,Female,Pediatrics,Flu,15,1535
+P0471,62,Female,Oncology,Leukemia,6,8977
+P0472,23,Male,Pediatrics,Flu,15,14627
+P0473,42,Female,Oncology,Leukemia,6,7368
+P0474,64,Female,Orthopedics,Back Pain,3,2106
+P0475,19,Male,Oncology,Lung Cancer,5,14215
+P0476,53,Female,Pediatrics,Fever,3,5941
+P0477,58,Male,Neurology,Stroke,12,785
+P0478,64,Male,Cardiology,Hypertension,8,7703
+P0479,69,Male,Oncology,Breast Cancer,15,11975
+P0480,28,Male,Oncology,Leukemia,15,9844
+P0481,79,Male,Oncology,Leukemia,2,4214
+P0482,53,Male,Pediatrics,Fever,5,12839
+P0483,43,Female,Oncology,Leukemia,12,13018
+P0484,25,Female,Cardiology,Hypertension,8,3494
+P0485,27,Male,Orthopedics,Back Pain,13,8434
+P0486,71,Female,Cardiology,Heart Failure,2,11012
+P0487,28,Male,Orthopedics,Arthritis,1,12743
+P0488,46,Male,Pediatrics,Flu,1,5869
+P0489,55,Female,Oncology,Breast Cancer,2,799
+P0490,34,Male,Orthopedics,Back Pain,15,7746
+P0491,40,Male,Cardiology,Hypertension,8,9976
+P0492,43,Female,Orthopedics,Fracture,7,5358
+P0493,43,Male,Orthopedics,Back Pain,3,12680
+P0494,65,Female,Oncology,Lung Cancer,13,5168
+P0495,46,Female,Orthopedics,Back Pain,6,10683
+P0496,63,Female,Orthopedics,Back Pain,2,13524
+P0497,19,Female,Orthopedics,Fracture,8,10781
+P0498,45,Female,Pediatrics,Fever,15,1986
+P0499,49,Female,Pediatrics,Fever,4,14663
+P0500,20,Female,Orthopedics,Fracture,12,2498
+P0501,28,Male,Pediatrics,Infection,13,1070
+P0502,22,Male,Cardiology,Heart Failure,4,7196
+P0503,66,Male,Cardiology,Hypertension,4,5764
+P0504,73,Male,Neurology,Epilepsy,6,7330
+P0505,82,Male,Pediatrics,Infection,4,9425
+P0506,70,Male,Oncology,Leukemia,15,7897
+P0507,55,Male,Orthopedics,Fracture,5,8258
+P0508,26,Female,Neurology,Stroke,4,12512
+P0509,29,Male,Orthopedics,Back Pain,11,1533
+P0510,43,Male,Pediatrics,Fever,1,13383
+P0511,42,Female,Oncology,Lung Cancer,12,4862
+P0512,85,Female,Cardiology,Heart Disease,10,6270
+P0513,51,Female,Neurology,Epilepsy,5,6228
+P0514,81,Female,Neurology,Epilepsy,10,2018
+P0515,23,Male,Neurology,Migraine,13,616
+P0516,42,Male,Neurology,Migraine,6,909
+P0517,19,Male,Neurology,Migraine,4,6183
+P0518,41,Female,Oncology,Breast Cancer,3,8682
+P0519,34,Male,Neurology,Migraine,3,1734
+P0520,24,Female,Pediatrics,Flu,13,1662
+P0521,59,Male,Pediatrics,Infection,12,6988
+P0522,21,Female,Pediatrics,Flu,5,11882
+P0523,39,Female,Neurology,Epilepsy,2,9378
+P0524,73,Male,Cardiology,Hypertension,3,10522
+P0525,31,Male,Neurology,Migraine,2,8472
+P0526,81,Male,Oncology,Leukemia,15,10204
+P0527,81,Male,Neurology,Stroke,14,13027
+P0528,79,Male,Pediatrics,Fever,3,1247
+P0529,63,Male,Orthopedics,Arthritis,10,4555
+P0530,62,Female,Pediatrics,Flu,11,14945
+P0531,79,Female,Oncology,Lung Cancer,12,6753
+P0532,31,Male,Cardiology,Hypertension,4,14322
+P0533,37,Male,Orthopedics,Back Pain,3,7778
+P0534,37,Female,Oncology,Lung Cancer,4,8926
+P0535,68,Male,Orthopedics,Fracture,11,4858
+P0536,52,Male,Orthopedics,Arthritis,4,9874
+P0537,48,Female,Cardiology,Heart Failure,6,12589
+P0538,77,Female,Neurology,Stroke,9,9002
+P0539,85,Female,Neurology,Stroke,3,13524
+P0540,64,Female,Oncology,Leukemia,2,11841
+P0541,21,Male,Neurology,Stroke,2,1434
+P0542,28,Male,Orthopedics,Back Pain,14,10361
+P0543,29,Female,Pediatrics,Fever,14,601
+P0544,62,Male,Orthopedics,Back Pain,14,11465
+P0545,63,Female,Pediatrics,Fever,15,6131
+P0546,43,Male,Cardiology,Heart Failure,7,13896
+P0547,39,Female,Oncology,Breast Cancer,2,2380
+P0548,39,Female,Neurology,Migraine,9,5927
+P0549,45,Male,Orthopedics,Arthritis,10,12758
+P0550,48,Male,Pediatrics,Flu,2,9980
+P0551,60,Male,Oncology,Leukemia,4,10289
+P0552,51,Male,Cardiology,Heart Failure,13,10322
+P0553,53,Female,Cardiology,Heart Failure,8,12250
+P0554,25,Female,Cardiology,Heart Disease,9,1532
+P0555,77,Male,Neurology,Stroke,7,10065
+P0556,53,Male,Cardiology,Hypertension,8,669
+P0557,59,Male,Oncology,Lung Cancer,6,4556
+P0558,65,Male,Pediatrics,Infection,2,3999
+P0559,77,Female,Pediatrics,Fever,5,788
+P0560,68,Female,Pediatrics,Fever,8,3302
+P0561,44,Male,Orthopedics,Arthritis,1,4440
+P0562,60,Female,Pediatrics,Infection,13,10865
+P0563,31,Female,Pediatrics,Fever,2,14720
+P0564,57,Female,Pediatrics,Fever,8,7105
+P0565,80,Female,Pediatrics,Fever,7,14425
+P0566,85,Male,Oncology,Lung Cancer,7,875
+P0567,30,Female,Cardiology,Hypertension,15,11988
+P0568,58,Female,Orthopedics,Fracture,2,1372
+P0569,23,Male,Cardiology,Heart Failure,4,10492
+P0570,49,Male,Cardiology,Hypertension,5,668
+P0571,27,Male,Oncology,Breast Cancer,4,4355
+P0572,35,Female,Cardiology,Heart Disease,13,5776
+P0573,60,Female,Cardiology,Heart Failure,13,2666
+P0574,32,Male,Orthopedics,Arthritis,14,5580
+P0575,80,Male,Cardiology,Heart Disease,5,13025
+P0576,48,Female,Cardiology,Heart Failure,11,12268
+P0577,79,Female,Neurology,Migraine,9,8566
+P0578,23,Female,Neurology,Epilepsy,3,1655
+P0579,71,Female,Pediatrics,Fever,6,10020
+P0580,63,Female,Oncology,Lung Cancer,5,13207
+P0581,70,Male,Cardiology,Hypertension,5,8201
+P0582,44,Male,Pediatrics,Infection,8,5287
+P0583,77,Male,Cardiology,Heart Disease,3,5177
+P0584,64,Female,Orthopedics,Arthritis,5,2379
+P0585,18,Male,Pediatrics,Fever,11,2519
+P0586,29,Male,Orthopedics,Arthritis,9,3847
+P0587,72,Male,Orthopedics,Arthritis,8,14674
+P0588,24,Female,Pediatrics,Fever,2,2609
+P0589,69,Female,Pediatrics,Flu,8,2376
+P0590,48,Female,Oncology,Breast Cancer,1,9016
+P0591,24,Male,Oncology,Breast Cancer,2,6999
+P0592,47,Female,Oncology,Lung Cancer,15,623
+P0593,34,Male,Cardiology,Heart Disease,12,3782
+P0594,22,Male,Pediatrics,Flu,11,11085
+P0595,74,Female,Neurology,Stroke,13,10753
+P0596,27,Female,Cardiology,Hypertension,7,14643
+P0597,53,Male,Cardiology,Hypertension,7,1724
+P0598,74,Male,Orthopedics,Arthritis,8,9984
+P0599,31,Male,Pediatrics,Fever,3,2945
+P0600,67,Female,Orthopedics,Fracture,8,5318
+P0601,23,Female,Cardiology,Heart Failure,9,9129
+P0602,68,Male,Orthopedics,Back Pain,1,5927
+P0603,27,Female,Oncology,Leukemia,9,14999
+P0604,23,Female,Oncology,Breast Cancer,7,10471
+P0605,84,Female,Oncology,Breast Cancer,6,14541
+P0606,50,Female,Neurology,Migraine,1,8450
+P0607,19,Female,Oncology,Breast Cancer,5,4252
+P0608,68,Female,Neurology,Epilepsy,6,2790
+P0609,83,Male,Oncology,Leukemia,12,8997
+P0610,54,Male,Cardiology,Hypertension,1,6074
+P0611,85,Male,Orthopedics,Back Pain,1,3823
+P0612,67,Male,Cardiology,Heart Disease,3,14752
+P0613,21,Female,Orthopedics,Back Pain,15,10291
+P0614,69,Female,Neurology,Migraine,5,8566
+P0615,62,Female,Cardiology,Hypertension,6,8942
+P0616,77,Female,Orthopedics,Back Pain,1,4732
+P0617,59,Female,Cardiology,Hypertension,15,6730
+P0618,53,Male,Oncology,Leukemia,8,12643
+P0619,31,Female,Oncology,Leukemia,4,829
+P0620,48,Female,Oncology,Breast Cancer,8,6524
+P0621,31,Female,Oncology,Lung Cancer,1,6710
+P0622,39,Female,Pediatrics,Flu,11,1295
+P0623,68,Female,Cardiology,Heart Disease,1,2835
+P0624,54,Female,Neurology,Migraine,1,13663
+P0625,19,Male,Cardiology,Hypertension,9,2714
+P0626,30,Male,Oncology,Lung Cancer,4,5680
+P0627,74,Male,Cardiology,Heart Disease,3,10410
+P0628,59,Male,Orthopedics,Arthritis,10,8170
+P0629,49,Female,Cardiology,Heart Disease,5,9253
+P0630,42,Female,Oncology,Leukemia,9,560
+P0631,42,Female,Orthopedics,Fracture,8,5574
+P0632,62,Female,Cardiology,Heart Disease,7,4375
+P0633,44,Male,Pediatrics,Flu,12,7733
+P0634,83,Male,Pediatrics,Fever,10,14985
+P0635,31,Female,Cardiology,Heart Failure,13,4629
+P0636,47,Male,Neurology,Stroke,15,9602
+P0637,44,Male,Pediatrics,Flu,12,518
+P0638,44,Female,Oncology,Breast Cancer,9,12874
+P0639,64,Male,Orthopedics,Back Pain,10,13731
+P0640,68,Male,Cardiology,Heart Failure,2,2338
+P0641,73,Female,Cardiology,Hypertension,12,9614
+P0642,42,Female,Oncology,Lung Cancer,6,1729
+P0643,80,Female,Pediatrics,Infection,13,9475
+P0644,51,Male,Cardiology,Heart Disease,6,12956
+P0645,71,Male,Pediatrics,Infection,4,9340
+P0646,51,Female,Pediatrics,Fever,3,2350
+P0647,25,Male,Oncology,Breast Cancer,2,8371
+P0648,67,Male,Orthopedics,Back Pain,15,5975
+P0649,83,Female,Neurology,Stroke,2,14501
+P0650,56,Male,Neurology,Migraine,13,4430
+P0651,34,Male,Cardiology,Hypertension,2,5288
+P0652,50,Male,Neurology,Stroke,5,3671
+P0653,31,Male,Orthopedics,Fracture,3,6347
+P0654,23,Male,Neurology,Migraine,15,11946
+P0655,65,Female,Neurology,Migraine,3,6505
+P0656,28,Male,Oncology,Breast Cancer,10,5429
+P0657,82,Male,Oncology,Breast Cancer,12,13982
+P0658,60,Male,Pediatrics,Infection,4,1894
+P0659,58,Female,Oncology,Leukemia,1,4646
+P0660,48,Male,Pediatrics,Flu,14,554
+P0661,36,Male,Pediatrics,Infection,14,14649
+P0662,66,Male,Orthopedics,Fracture,14,6654
+P0663,80,Male,Cardiology,Hypertension,2,3578
+P0664,29,Male,Pediatrics,Fever,10,7836
+P0665,77,Female,Oncology,Breast Cancer,5,4786
+P0666,82,Male,Cardiology,Heart Failure,2,2651
+P0667,61,Female,Pediatrics,Infection,11,5403
+P0668,67,Male,Pediatrics,Infection,3,13676
+P0669,32,Female,Pediatrics,Flu,9,7925
+P0670,24,Female,Cardiology,Hypertension,8,13689
+P0671,35,Male,Cardiology,Heart Failure,2,10334
+P0672,73,Male,Neurology,Stroke,10,2546
+P0673,73,Male,Cardiology,Heart Disease,10,9256
+P0674,85,Male,Cardiology,Heart Disease,9,7931
+P0675,64,Female,Oncology,Leukemia,13,6900
+P0676,81,Female,Cardiology,Heart Disease,13,1696
+P0677,27,Male,Orthopedics,Arthritis,4,2611
+P0678,27,Male,Pediatrics,Flu,2,4046
+P0679,30,Female,Neurology,Epilepsy,9,14137
+P0680,41,Female,Oncology,Leukemia,9,9756
+P0681,30,Male,Neurology,Stroke,13,3210
+P0682,80,Male,Cardiology,Hypertension,11,10923
+P0683,72,Female,Cardiology,Hypertension,11,13797
+P0684,75,Female,Orthopedics,Arthritis,2,1312
+P0685,25,Female,Orthopedics,Back Pain,4,7827
+P0686,23,Male,Oncology,Breast Cancer,2,11508
+P0687,68,Male,Orthopedics,Fracture,10,13615
+P0688,61,Female,Orthopedics,Fracture,13,6002
+P0689,42,Female,Cardiology,Heart Disease,13,11568
+P0690,55,Male,Neurology,Stroke,6,2904
+P0691,43,Male,Oncology,Leukemia,14,12930
+P0692,47,Female,Oncology,Lung Cancer,7,13932
+P0693,19,Female,Pediatrics,Infection,8,4029
+P0694,46,Male,Neurology,Epilepsy,7,6953
+P0695,24,Male,Pediatrics,Fever,13,12371
+P0696,61,Male,Neurology,Epilepsy,3,9570
+P0697,52,Female,Pediatrics,Infection,9,6183
+P0698,81,Female,Orthopedics,Back Pain,10,11801
+P0699,60,Female,Pediatrics,Flu,13,3175
+P0700,70,Female,Orthopedics,Fracture,13,13834
+P0701,21,Male,Pediatrics,Fever,4,7240
+P0702,60,Female,Neurology,Epilepsy,15,6627
+P0703,47,Female,Cardiology,Heart Failure,15,4004
+P0704,78,Female,Oncology,Lung Cancer,9,10823
+P0705,25,Male,Orthopedics,Arthritis,3,13501
+P0706,65,Female,Oncology,Leukemia,5,8404
+P0707,39,Male,Orthopedics,Arthritis,10,4953
+P0708,58,Female,Pediatrics,Flu,14,11806
+P0709,56,Female,Orthopedics,Fracture,9,11221
+P0710,48,Male,Orthopedics,Fracture,9,10135
+P0711,51,Female,Pediatrics,Fever,12,11565
+P0712,73,Male,Cardiology,Heart Failure,9,13913
+P0713,44,Female,Oncology,Breast Cancer,2,6473
+P0714,80,Male,Cardiology,Heart Disease,10,4836
+P0715,75,Male,Orthopedics,Back Pain,13,7499
+P0716,61,Male,Cardiology,Heart Failure,14,13149
+P0717,84,Male,Neurology,Stroke,13,8214
+P0718,28,Male,Orthopedics,Fracture,5,1085
+P0719,48,Male,Pediatrics,Infection,1,1538
+P0720,67,Female,Oncology,Breast Cancer,12,1866
+P0721,41,Male,Pediatrics,Infection,12,12963
+P0722,21,Male,Pediatrics,Fever,1,3051
+P0723,29,Female,Cardiology,Heart Failure,7,12310
+P0724,84,Female,Pediatrics,Fever,4,590
+P0725,44,Male,Neurology,Stroke,10,2310
+P0726,56,Female,Oncology,Leukemia,10,1397
+P0727,73,Male,Cardiology,Heart Failure,5,4778
+P0728,71,Female,Orthopedics,Arthritis,11,5193
+P0729,76,Male,Oncology,Leukemia,15,11267
+P0730,28,Male,Neurology,Stroke,14,1971
+P0731,43,Male,Orthopedics,Back Pain,10,2484
+P0732,42,Male,Pediatrics,Fever,3,10146
+P0733,53,Male,Neurology,Stroke,13,14446
+P0734,54,Male,Orthopedics,Arthritis,4,9134
+P0735,72,Male,Neurology,Epilepsy,6,9558
+P0736,59,Male,Cardiology,Hypertension,2,2664
+P0737,80,Male,Orthopedics,Fracture,15,1159
+P0738,63,Male,Oncology,Lung Cancer,9,3884
+P0739,22,Female,Orthopedics,Back Pain,2,11036
+P0740,76,Male,Neurology,Migraine,4,3807
+P0741,41,Female,Orthopedics,Back Pain,8,12820
+P0742,25,Female,Oncology,Lung Cancer,12,8698
+P0743,44,Female,Pediatrics,Fever,10,13926
+P0744,51,Male,Oncology,Lung Cancer,14,12363
+P0745,45,Male,Pediatrics,Fever,9,8070
+P0746,74,Male,Orthopedics,Fracture,12,2408
+P0747,39,Male,Neurology,Epilepsy,1,9816
+P0748,24,Female,Orthopedics,Back Pain,2,10749
+P0749,24,Female,Neurology,Stroke,1,11489
+P0750,48,Female,Cardiology,Heart Disease,4,12143
+P0751,63,Female,Cardiology,Hypertension,4,11815
+P0752,66,Female,Pediatrics,Infection,10,2996
+P0753,27,Male,Neurology,Stroke,1,4709
+P0754,32,Female,Neurology,Stroke,9,10156
+P0755,65,Female,Cardiology,Heart Disease,9,9396
+P0756,22,Male,Cardiology,Heart Disease,2,10575
+P0757,67,Female,Oncology,Lung Cancer,14,1468
+P0758,84,Male,Oncology,Leukemia,10,3981
+P0759,54,Male,Pediatrics,Fever,13,1297
+P0760,49,Male,Pediatrics,Infection,1,5588
+P0761,45,Male,Oncology,Leukemia,7,10809
+P0762,42,Female,Cardiology,Hypertension,11,7976
+P0763,58,Male,Oncology,Leukemia,15,5529
+P0764,72,Female,Neurology,Stroke,11,14644
+P0765,53,Female,Oncology,Breast Cancer,7,8798
+P0766,39,Female,Pediatrics,Infection,11,7131
+P0767,59,Male,Oncology,Lung Cancer,10,8586
+P0768,38,Female,Oncology,Breast Cancer,2,3501
+P0769,62,Female,Neurology,Migraine,7,1600
+P0770,38,Male,Neurology,Migraine,3,10990
+P0771,64,Female,Pediatrics,Infection,7,7876
+P0772,22,Male,Oncology,Breast Cancer,7,14545
+P0773,73,Female,Oncology,Breast Cancer,6,7502
+P0774,46,Male,Orthopedics,Back Pain,5,13567
+P0775,47,Female,Cardiology,Heart Failure,12,5985
+P0776,80,Male,Orthopedics,Arthritis,11,10770
+P0777,69,Female,Orthopedics,Fracture,5,5594
+P0778,77,Female,Cardiology,Hypertension,11,816
+P0779,69,Female,Pediatrics,Infection,1,1487
+P0780,44,Male,Cardiology,Heart Disease,5,8214
+P0781,61,Male,Oncology,Breast Cancer,9,11723
+P0782,77,Male,Pediatrics,Flu,5,9571
+P0783,68,Female,Oncology,Breast Cancer,13,8303
+P0784,65,Female,Pediatrics,Infection,2,11816
+P0785,85,Male,Orthopedics,Back Pain,8,3275
+P0786,20,Female,Neurology,Stroke,14,6232
+P0787,62,Male,Oncology,Breast Cancer,3,8098
+P0788,71,Female,Pediatrics,Fever,7,3230
+P0789,40,Male,Oncology,Lung Cancer,12,12549
+P0790,73,Female,Pediatrics,Fever,14,14885
+P0791,66,Female,Neurology,Epilepsy,4,8173
+P0792,77,Female,Pediatrics,Flu,3,3308
+P0793,81,Female,Cardiology,Heart Disease,12,13751
+P0794,40,Male,Oncology,Leukemia,13,14455
+P0795,74,Female,Cardiology,Heart Failure,11,12822
+P0796,80,Male,Orthopedics,Back Pain,5,4227
+P0797,43,Female,Neurology,Migraine,1,10829
+P0798,82,Male,Oncology,Breast Cancer,5,8990
+P0799,58,Male,Cardiology,Heart Failure,6,12178
+P0800,23,Female,Orthopedics,Arthritis,14,11895
+P0801,53,Male,Oncology,Lung Cancer,5,3229
+P0802,48,Female,Neurology,Epilepsy,7,13576
+P0803,52,Male,Neurology,Stroke,12,1491
+P0804,79,Male,Pediatrics,Infection,1,14183
+P0805,18,Female,Oncology,Breast Cancer,5,6009
+P0806,44,Male,Oncology,Leukemia,12,1128
+P0807,45,Female,Orthopedics,Back Pain,7,10557
+P0808,78,Male,Pediatrics,Fever,15,12594
+P0809,83,Female,Neurology,Epilepsy,2,875
+P0810,65,Male,Orthopedics,Back Pain,10,918
+P0811,54,Female,Neurology,Epilepsy,4,5322
+P0812,53,Male,Pediatrics,Flu,3,4713
+P0813,57,Female,Cardiology,Heart Failure,13,5192
+P0814,53,Male,Oncology,Leukemia,8,4896
+P0815,19,Female,Neurology,Stroke,12,1152
+P0816,83,Male,Pediatrics,Fever,13,2530
+P0817,29,Male,Oncology,Leukemia,1,12699
+P0818,78,Female,Orthopedics,Fracture,3,14899
+P0819,61,Male,Pediatrics,Fever,9,13657
+P0820,34,Male,Cardiology,Hypertension,12,1174
+P0821,76,Female,Pediatrics,Flu,6,12683
+P0822,25,Female,Cardiology,Heart Failure,13,1213
+P0823,43,Male,Oncology,Lung Cancer,5,948
+P0824,22,Female,Orthopedics,Back Pain,12,12105
+P0825,70,Female,Orthopedics,Fracture,6,8076
+P0826,43,Male,Cardiology,Hypertension,1,6509
+P0827,50,Female,Cardiology,Hypertension,6,8481
+P0828,75,Female,Neurology,Migraine,11,12817
+P0829,40,Male,Cardiology,Hypertension,9,10151
+P0830,62,Male,Neurology,Stroke,2,10060
+P0831,44,Male,Pediatrics,Flu,4,1342
+P0832,62,Male,Oncology,Lung Cancer,7,7634
+P0833,38,Female,Oncology,Leukemia,8,9628
+P0834,33,Male,Orthopedics,Fracture,10,3555
+P0835,35,Male,Pediatrics,Infection,11,9847
+P0836,82,Female,Pediatrics,Infection,13,7865
+P0837,51,Male,Cardiology,Hypertension,1,10796
+P0838,31,Male,Neurology,Migraine,1,1253
+P0839,36,Male,Cardiology,Heart Disease,15,13278
+P0840,28,Female,Pediatrics,Fever,3,5155
+P0841,48,Female,Oncology,Lung Cancer,13,8516
+P0842,85,Female,Pediatrics,Flu,7,11153
+P0843,22,Male,Orthopedics,Back Pain,5,10897
+P0844,48,Male,Oncology,Lung Cancer,10,7947
+P0845,36,Female,Cardiology,Heart Disease,9,6073
+P0846,77,Female,Orthopedics,Arthritis,10,13325
+P0847,78,Female,Neurology,Stroke,5,5347
+P0848,65,Male,Pediatrics,Flu,2,6311
+P0849,32,Male,Pediatrics,Flu,10,8263
+P0850,40,Female,Neurology,Stroke,4,14673
+P0851,37,Female,Pediatrics,Fever,12,2621
+P0852,26,Female,Orthopedics,Arthritis,10,3976
+P0853,40,Female,Cardiology,Hypertension,9,3165
+P0854,36,Male,Oncology,Leukemia,9,12285
+P0855,52,Female,Orthopedics,Fracture,12,5321
+P0856,46,Male,Oncology,Leukemia,15,6061
+P0857,55,Female,Neurology,Migraine,6,8317
+P0858,51,Male,Orthopedics,Arthritis,7,6212
+P0859,85,Male,Oncology,Lung Cancer,13,2976
+P0860,43,Male,Neurology,Stroke,9,14708
+P0861,71,Male,Cardiology,Heart Disease,15,3475
+P0862,33,Female,Neurology,Epilepsy,8,7701
+P0863,69,Female,Pediatrics,Flu,7,3192
+P0864,54,Male,Neurology,Migraine,8,2676
+P0865,51,Male,Orthopedics,Fracture,4,7598
+P0866,41,Female,Pediatrics,Flu,13,11151
+P0867,78,Female,Neurology,Stroke,6,13662
+P0868,78,Female,Orthopedics,Fracture,4,5338
+P0869,45,Male,Cardiology,Heart Disease,4,12059
+P0870,32,Male,Neurology,Stroke,14,9704
+P0871,51,Male,Oncology,Lung Cancer,11,12961
+P0872,62,Female,Cardiology,Heart Failure,9,4000
+P0873,22,Female,Cardiology,Heart Disease,11,7040
+P0874,32,Female,Oncology,Leukemia,15,6268
+P0875,58,Male,Orthopedics,Arthritis,9,11826
+P0876,36,Male,Pediatrics,Infection,11,6016
+P0877,22,Male,Orthopedics,Fracture,15,6997
+P0878,33,Female,Cardiology,Hypertension,1,14539
+P0879,38,Female,Orthopedics,Fracture,12,6145
+P0880,32,Male,Oncology,Breast Cancer,4,3165
+P0881,22,Male,Pediatrics,Infection,2,3269
+P0882,45,Female,Cardiology,Heart Disease,10,5531
+P0883,40,Male,Pediatrics,Infection,6,5661
+P0884,52,Male,Neurology,Epilepsy,9,1082
+P0885,66,Female,Oncology,Leukemia,10,11742
+P0886,34,Male,Neurology,Stroke,6,881
+P0887,69,Male,Orthopedics,Fracture,9,10733
+P0888,25,Male,Pediatrics,Fever,9,8855
+P0889,44,Male,Cardiology,Hypertension,9,13561
+P0890,59,Male,Oncology,Lung Cancer,4,1023
+P0891,30,Male,Pediatrics,Flu,4,1651
+P0892,36,Female,Neurology,Stroke,1,2676
+P0893,78,Female,Oncology,Lung Cancer,9,7209
+P0894,29,Male,Oncology,Lung Cancer,5,9509
+P0895,54,Female,Cardiology,Hypertension,11,4205
+P0896,81,Female,Oncology,Lung Cancer,6,4048
+P0897,21,Male,Oncology,Leukemia,7,2157
+P0898,49,Female,Orthopedics,Back Pain,1,12296
+P0899,50,Female,Neurology,Migraine,14,14376
+P0900,46,Female,Cardiology,Hypertension,6,13729
+P0901,49,Female,Pediatrics,Infection,2,14485
+P0902,20,Female,Pediatrics,Fever,5,2454
+P0903,67,Male,Orthopedics,Arthritis,9,3213
+P0904,29,Male,Cardiology,Hypertension,1,6452
+P0905,68,Female,Cardiology,Heart Disease,2,4626
+P0906,60,Male,Cardiology,Heart Failure,1,8090
+P0907,47,Female,Pediatrics,Fever,5,1392
+P0908,49,Female,Neurology,Epilepsy,6,3066
+P0909,34,Female,Pediatrics,Infection,12,12262
+P0910,44,Male,Orthopedics,Back Pain,11,10585
+P0911,28,Male,Neurology,Stroke,4,7763
+P0912,20,Female,Pediatrics,Fever,6,8944
+P0913,69,Female,Neurology,Stroke,10,5883
+P0914,62,Female,Orthopedics,Fracture,4,14442
+P0915,58,Male,Pediatrics,Flu,2,13993
+P0916,68,Female,Oncology,Lung Cancer,14,7006
+P0917,43,Female,Oncology,Lung Cancer,9,3313
+P0918,69,Female,Orthopedics,Back Pain,3,2350
+P0919,23,Female,Orthopedics,Back Pain,1,8066
+P0920,28,Female,Pediatrics,Flu,1,11203
+P0921,35,Male,Orthopedics,Back Pain,1,11173
+P0922,80,Female,Oncology,Leukemia,7,13285
+P0923,19,Male,Oncology,Leukemia,9,3029
+P0924,48,Female,Cardiology,Heart Failure,8,2362
+P0925,45,Female,Cardiology,Heart Disease,1,12460
+P0926,63,Female,Cardiology,Hypertension,2,4494
+P0927,67,Female,Cardiology,Heart Disease,14,2838
+P0928,44,Female,Orthopedics,Fracture,11,1448
+P0929,41,Female,Pediatrics,Flu,9,7222
+P0930,20,Male,Pediatrics,Fever,6,5727
+P0931,85,Female,Cardiology,Hypertension,6,8003
+P0932,31,Female,Oncology,Breast Cancer,9,10552
+P0933,44,Male,Neurology,Migraine,4,13529
+P0934,37,Female,Neurology,Stroke,13,10930
+P0935,28,Male,Pediatrics,Fever,1,5149
+P0936,66,Male,Cardiology,Heart Disease,7,8294
+P0937,56,Female,Neurology,Stroke,15,4383
+P0938,72,Male,Cardiology,Heart Failure,6,12506
+P0939,59,Female,Neurology,Epilepsy,12,5586
+P0940,28,Female,Pediatrics,Flu,6,10720
+P0941,34,Male,Oncology,Breast Cancer,5,6339
+P0942,28,Male,Pediatrics,Flu,15,3311
+P0943,53,Male,Neurology,Migraine,2,4641
+P0944,25,Female,Neurology,Migraine,15,2221
+P0945,41,Male,Neurology,Stroke,13,10742
+P0946,52,Male,Neurology,Migraine,2,5391
+P0947,22,Female,Pediatrics,Infection,6,1055
+P0948,31,Female,Neurology,Migraine,13,10013
+P0949,27,Male,Neurology,Migraine,14,9482
+P0950,24,Male,Neurology,Migraine,5,14318
+P0951,68,Female,Cardiology,Heart Disease,12,7158
+P0952,56,Male,Orthopedics,Fracture,7,12977
+P0953,21,Male,Oncology,Leukemia,1,912
+P0954,50,Female,Orthopedics,Back Pain,9,947
+P0955,59,Male,Oncology,Lung Cancer,9,3453
+P0956,64,Female,Neurology,Migraine,14,5474
+P0957,81,Male,Pediatrics,Flu,7,13041
+P0958,85,Female,Pediatrics,Infection,7,5817
+P0959,19,Female,Pediatrics,Flu,15,12554
+P0960,67,Female,Neurology,Stroke,8,1375
+P0961,64,Female,Neurology,Migraine,10,5849
+P0962,47,Male,Pediatrics,Fever,2,13854
+P0963,24,Female,Cardiology,Heart Disease,10,9649
+P0964,65,Female,Cardiology,Heart Disease,9,7809
+P0965,44,Male,Pediatrics,Fever,12,8550
+P0966,85,Female,Orthopedics,Arthritis,5,14631
+P0967,27,Male,Pediatrics,Flu,1,11390
+P0968,57,Male,Orthopedics,Back Pain,11,13589
+P0969,37,Male,Cardiology,Heart Failure,9,11613
+P0970,72,Female,Pediatrics,Flu,10,6853
+P0971,48,Female,Neurology,Epilepsy,8,14305
+P0972,79,Female,Pediatrics,Flu,6,10839
+P0973,38,Male,Neurology,Migraine,1,3858
+P0974,28,Female,Neurology,Epilepsy,14,3931
+P0975,19,Male,Neurology,Stroke,13,6927
+P0976,36,Male,Neurology,Migraine,7,10957
+P0977,19,Male,Pediatrics,Fever,12,12088
+P0978,62,Female,Oncology,Breast Cancer,12,6572
+P0979,26,Female,Orthopedics,Fracture,15,5522
+P0980,54,Male,Pediatrics,Fever,8,12439
+P0981,77,Female,Pediatrics,Fever,7,5934
+P0982,42,Female,Cardiology,Heart Failure,15,6953
+P0983,85,Female,Oncology,Leukemia,1,7878
+P0984,80,Female,Oncology,Breast Cancer,2,7506
+P0985,19,Male,Oncology,Lung Cancer,2,9441
+P0986,55,Male,Pediatrics,Flu,1,1862
+P0987,68,Female,Cardiology,Heart Failure,15,10691
+P0988,57,Male,Pediatrics,Fever,14,8223
+P0989,44,Female,Neurology,Migraine,15,2911
+P0990,63,Female,Pediatrics,Fever,14,4455
+P0991,83,Male,Cardiology,Heart Failure,5,12474
+P0992,20,Female,Cardiology,Hypertension,15,5740
+P0993,66,Female,Neurology,Stroke,12,9022
+P0994,81,Female,Cardiology,Heart Failure,2,7180
+P0995,51,Female,Cardiology,Hypertension,10,14580
+P0996,23,Male,Pediatrics,Infection,11,13371
+P0997,83,Male,Oncology,Leukemia,14,3669
+P0998,68,Male,Orthopedics,Back Pain,6,13169
+P0999,76,Female,Pediatrics,Infection,13,12294
+P1000,30,Male,Cardiology,Heart Failure,14,8935
