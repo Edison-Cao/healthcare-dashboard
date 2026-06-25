@@ -18,7 +18,7 @@ st.set_page_config(
 df = pd.read_csv("patient_data.csv")
 
 # =========================
-# Sidebar Filters (PM Level)
+# Sidebar Filters 
 # =========================
 st.sidebar.header("🎛 Filters")
 
@@ -64,7 +64,7 @@ page = st.sidebar.radio(
 )
 
 # =========================
-# EXECUTIVE OVERVIEW (PM核心)
+# EXECUTIVE OVERVIEW 
 # =========================
 if page == "Executive Overview":
 
@@ -85,7 +85,7 @@ if page == "Executive Overview":
 
     st.divider()
 
-    # Executive Insight (PM必须有)
+    # Executive Insight 
     st.subheader("📌 Key Insight")
 
     top_dept = (
@@ -126,7 +126,7 @@ elif page == "Patient Insights":
         )
         st.plotly_chart(fig_gender, use_container_width=True)
 
-    # PM增强分析
+   
     st.subheader("💡 Insight")
 
     high_cost_ratio = (filtered_df["Cost"] > filtered_df["Cost"].mean()).mean()
@@ -137,7 +137,7 @@ elif page == "Patient Insights":
     )
 
 # =========================
-# CLINICAL OPERATIONS (核心PM页面)
+# CLINICAL OPERATIONS 
 # =========================
 elif page == "Clinical Operations":
 
